@@ -14,13 +14,13 @@ a{color:#1a56c4}
 </head>
 <body>
 <h1>Privacy Policy — Rebound</h1>
-<p class="small">App: <b>Rebound</b> (package <code>com.yehuda.rebound</code>) · Developer: Yehuda P. · Contact: <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a> · Last updated: November 5, 2026</p>
+<p class="small">App: <b>Rebound</b> (package <code>com.yehuda.rebound</code>) · Developer: Yehuda P. · Contact: <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a> · Last updated: November 6, 2026</p>
 
 <h2>Overview</h2>
-<p>Rebound is a 1v1 basketball game. This policy explains what data is processed when you play, and by whom. The short version: <b>we do not ask for, collect, or store any personal information on our own servers</b>. The game has no account system in its current version. The only data processing happens on your device, and by Google services that power ads, usage statistics and purchases.</p>
+<p>Rebound is a basketball game you can play alone or online. This policy explains what data is processed when you play, and by whom. The short version: you can play without any account, and the game never asks for your e-mail or phone number. Google services power sign-in, ads, usage statistics and purchases. Our own game server runs online play while you play, and receives anonymous statistics about how the game is played. We never sell data.</p>
 
 <h2>Data stored on your device only</h2>
-<p>Game settings (such as sound on/off) and gameplay progress are saved locally on your device. They never leave it, and uninstalling the app deletes them.</p>
+<p>Settings, progress, credits and the time of the daily reminder are saved on your device. They are deleted when you uninstall the game.</p>
 
 <h2>Advertising (Google AdMob)</h2>
 <p>The game shows ads served by <b>Google AdMob</b>. To serve and measure ads, Google may collect and process data such as your device's advertising ID, IP address, approximate location derived from IP, and ad-interaction events. This processing is governed by Google's own policies:</p>
@@ -40,17 +40,32 @@ a{color:#1a56c4}
 <h2>Purchases (Google Play Billing)</h2>
 <p>Optional in-app purchases (such as a stage pass that removes ads for a stage) are processed entirely by <b>Google Play</b>. We never see or store your payment details. Purchase records are managed by your Google account. Refunds are handled according to <a href="https://support.google.com/googleplay/answer/2479637">Google Play's refund policy</a>.</p>
 
-<h2>Children</h2>
-<p>Rebound is not directed at children under 13, and is rated accordingly on Google Play. We do not knowingly collect personal information from children. If you believe a child has provided personal information through our app, contact us and we will address it.</p>
+<h2>Sign-in (Google Play Games and Firebase Authentication)</h2>
+<p>When the game starts, it signs you in to Google Play Games silently, if your phone is signed in to it. For online play the game exchanges that sign-in for a Firebase Authentication token (by Google), and our server checks the token so nobody can play online as someone else. Through them we receive your Play Games player name and an account identifier. Google keeps a sign-in record for us in Firebase Authentication. See Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+
+<h2>Online play</h2>
+<p>Our game server (a "relay", run by us on our own computer and on rented machines at Oracle Cloud and Google Cloud) finds you an opponent, opens rooms by code and Street Court courts, and passes the moves between the players. The moves and the state of a game are held only in memory while it is open. At a Street Court your player name is shown to the other players at that court. The server sees your IP address while you are connected, to deliver the game's messages and to limit abuse. The server's logs, which can include the IP address and the account identifier of a connection, are kept only for a short time and then overwritten.</p>
+
+<h2>Anonymous game statistics</h2>
+<p>The game makes a random number on your phone. It is not your name, your account, your advertising ID or your phone's serial number, and a new one is made if you reinstall the game. While the game is open, it tells our server that it is here (with that number and the game's version) and receives the game's settings, including which test group your phone belongs to. Once a day, and when certain things happen in the game (a credit is earned or used, a game starts or ends, a rewarded ad is offered or shown, a step of the tutorial, the daily reminder), the game sends a short note with that number. If your phone is one of Google's automated test devices, the note says so. These messages are encrypted on your phone so that only our server can read them. We use them to see how the game is played, and we cannot tie them to you. They are kept for up to 90 days and then deleted.</p>
+
+<h2>Daily reminder</h2>
+<p>If you allow notifications, the game sets one reminder a day on your phone. It is made by your phone, not sent from our server.</p>
+
+<h2>Update check</h2>
+<p>The game downloads a small file from our site, which is hosted on GitHub Pages, to see whether a newer version exists. As with any website, the host receives your IP address. No other information about you is sent.</p>
+
+<h2>Children and teenagers</h2>
+<p>Rebound is not directed at children under 13. We do not ask for anyone's name, e-mail or phone number. If you are a parent and believe your child under 13 has used the game's online features, write to <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a> and we will delete what our server holds for that player.</p>
 
 <h2>Data sharing and selling</h2>
-<p>We do not sell personal data. We do not share data with any third party other than the Google services described above, which operate under their own policies.</p>
+<p>We do not sell personal data. We do not share data with any third party, other than showing your player name to the players at your own Street Court. The Google services and the site hosting described above receive the data listed in their sections and operate under their own policies.</p>
 
 <h2>Data retention and deletion</h2>
-<p>We hold no personal data on our servers, so there is nothing for us to retain or delete. Local data is deleted when you uninstall the app. Usage statistics are held by Google Analytics, in aggregated or pseudonymous form, for a limited period set by that service. For data processed by Google (advertising, usage statistics), see Google's privacy controls linked above.</p>
+<p>Our server keeps no player profile for Rebound: no names, friends or tokens are stored. Anonymous statistics are kept for up to 90 days. The sign-in record at Firebase Authentication is kept by Google for us until you ask us to delete it. To request deletion, send an e-mail to <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a> with the subject "Rebound - delete my data" and your Play Games player name. We delete within 30 days and confirm by e-mail. Usage statistics are held by Google Analytics, in aggregated or pseudonymous form, for a limited period set by that service. Local data is deleted when you uninstall the game.</p>
 
 <h2>Changes to this policy</h2>
-<p>Future versions of the game may add features (such as online play or leaderboards) that change what data is processed. This page will be updated before any such change takes effect, and the "last updated" date will reflect it.</p>
+<p>When the game starts processing new data, this page is updated before that version is released, and the "last updated" date changes.</p>
 
 <h2>Contact</h2>
 <p>Questions or requests: <a href="mailto:yehuda.g.p@gmail.com">yehuda.g.p@gmail.com</a></p>
